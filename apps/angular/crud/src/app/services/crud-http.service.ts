@@ -15,7 +15,6 @@ export class CrudHttpService {
       .get<Todo[]>('https://jsonplaceholder.typicode.com/todos')
       .subscribe((todos) => {
         this.todos = todos;
-        console.log('these are my todos', todos);
       });
   }
 
